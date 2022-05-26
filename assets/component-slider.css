@@ -24,7 +24,26 @@ slider-component.slider-component-full-width {
   .no-js slider-component .slider {
     padding-bottom: 3rem;
   }
+
+  slider-component .collection-list-phone{
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .slider__slide{
+    width: 49% !important;
+    max-width: 50% !important;
+    margin: 0 !important;
+  }
+  
+  .slider-buttons{
+  display: none !important;
+  }
+  
 }
+
 
 .slider__slide {
   --focus-outline-padding: 0.5rem;
