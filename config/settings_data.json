@@ -142,12 +142,13 @@
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
-              "menu": "footer"
+              "heading": "HELP CENTER",
+              "menu": "main-menu"
             }
           },
           "footer-2": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "heading": "Our mission",
               "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
