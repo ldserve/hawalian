@@ -3,13 +3,13 @@
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#000000",
     "gradient_accent_1": "",
-    "colors_accent_2": "#285486",
+    "colors_accent_2": "#ffffff",
     "gradient_accent_2": "",
     "colors_text": "#000000",
     "colors_outline_button_labels": "#000000",
-    "colors_background_1": "#73caff",
+    "colors_background_1": "#ffffff",
     "gradient_background_1": "",
-    "colors_background_2": "#ffffff",
+    "colors_background_2": "#73caff",
     "gradient_background_2": "",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
@@ -80,7 +80,7 @@
     "drawer_shadow_blur": 5,
     "badge_position": "bottom left",
     "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "accent-2",
+    "sale_badge_color_scheme": "accent-1",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_twitter_link": "",
@@ -104,7 +104,7 @@
             "type": "announcement",
             "settings": {
               "text": "Welcome to our store",
-              "color_scheme": "background-1",
+              "color_scheme": "background-2",
               "link": ""
             }
           }
@@ -118,7 +118,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-2",
+          "color_scheme": "background-1",
           "logo": "shopify:\/\/shop_images\/hawallan.png",
           "logo_width": 160,
           "logo_position": "middle-left",
@@ -161,7 +161,7 @@
           "footer-2"
         ],
         "settings": {
-          "color_scheme": "background-2",
+          "color_scheme": "background-1",
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
