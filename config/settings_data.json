@@ -142,7 +142,7 @@
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "HELP CENTER",
+              "heading": "Help Center",
               "menu": "main-menu"
             }
           },
