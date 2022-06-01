@@ -120,7 +120,7 @@
         "settings": {
           "color_scheme": "background-1",
           "logo": "shopify:\/\/shop_images\/hawallan.png",
-          "logo_width": 160,
+          "logo_width": 250,
           "logo_position": "middle-left",
           "menu": "pc",
           "menu_type_desktop": "dropdown",
