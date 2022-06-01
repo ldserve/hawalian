@@ -87,7 +87,7 @@
         "1653984657b6450ba3-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "swim-trunks"
+            "collection": "tees"
           }
         },
         "1653984657b6450ba3-2": {
@@ -149,18 +149,20 @@
         "padding_bottom": 36
       }
     },
-    "video": {
-      "type": "video",
+    "1654077300f1a451df": {
+      "type": "image-banner",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/video.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
+        "image": "shopify:\/\/shop_images\/video.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
@@ -169,6 +171,6 @@
     "featured_collection",
     "16539846579bdbc14b",
     "1653987586edac9b02",
-    "video"
+    "1654077300f1a451df"
   ]
 }
