@@ -98,6 +98,7 @@
     "favicon": "shopify:\/\/shop_images\/middle_img_v2_a01ac4ee-de7e-4402-99a7-357c7ae3276g.png",
     "currency_code_enabled": true,
     "checkout_logo_image": "shopify:\/\/shop_images\/hawallan.png",
+    "checkout_sidebar_background_color": "#fcfcfc",
     "checkout_accent_color": "#013d66",
     "checkout_button_color": "#013d66",
     "sections": {
