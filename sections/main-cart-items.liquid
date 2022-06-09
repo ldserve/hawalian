@@ -18,6 +18,15 @@
     }
   }
 {%- endstyle -%}
+{% if first_time_accessed %}
+	<!-- Event snippet for RL-Cart conversion page -->
+	<script>
+		gtag('event', 'conversion', {
+			'send_to': 'AW-10929682459/CRGeCIXaq8QDEJvw1tso',
+			'transaction_id': ''
+		});
+	</script>
+{% endif %}
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
