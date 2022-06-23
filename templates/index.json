@@ -37,6 +37,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/banner-2_dfd1610e-e4f6-4cfb-8ddc-790f48aad1ce.jpg",
         "image_overlay_opacity": 40,
+        "image_link_1": "shopify:\/\/collections\/best-sellers",
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_content_position": "bottom-center",
@@ -154,6 +155,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/video.jpg",
         "image_overlay_opacity": 0,
+        "image_link_1": "",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",

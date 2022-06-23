@@ -109,15 +109,42 @@
             "type": "announcement",
             "settings": {
               "text": "Free Shipping On Order Over $99",
-              "color_scheme": "accent-1",
+              "link": ""
+            }
+          },
+          "6c051e17-56ba-474a-99b4-ef1ca41e2120": {
+            "type": "announcement",
+            "settings": {
+              "text": "Extra $10 off on order over $149   ✨Code:HW10",
+              "link": ""
+            }
+          },
+          "6d2c65de-7e62-4eaf-a222-6f485fbf588e": {
+            "type": "announcement",
+            "settings": {
+              "text": "Extra $20 off on order over $229  ✨Code:HW20",
+              "link": ""
+            }
+          },
+          "1f90f9b0-0190-4035-b021-78328a195dae": {
+            "type": "announcement",
+            "settings": {
+              "text": "Extra $30 off on order over $299  ✨Code:HW30",
               "link": ""
             }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "6c051e17-56ba-474a-99b4-ef1ca41e2120",
+          "6d2c65de-7e62-4eaf-a222-6f485fbf588e",
+          "1f90f9b0-0190-4035-b021-78328a195dae"
         ],
         "settings": {
+          "show": true,
+          "color_text": "#fdfdfd",
+          "color_bg": "#013d66",
+          "time": 10
         }
       },
       "header": {
