@@ -68,7 +68,7 @@
               <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
             </svg>
           </div>
-        </div>  
+        </div>
       </form>
     </facet-filters-form>
   {%- endif -%}
@@ -97,16 +97,40 @@
         {%- else -%}
           <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
             <div class="loading-overlay gradient"></div>
-    
+
             <ul id="product-grid" data-id="{{ section.id }}" class="
               grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
               grid--{{ section.settings.columns_desktop }}-col-desktop">
+							{% if collection.sort_by and collection.sort_by != empty %}
+								{% assign sort_by_list = collection.sort_by | split: "," %}
+								{% for item in sort_by_list %}
+									{% if all_products[item].featured_media and all_products[item].featured_media != empty %}
+										<style>
+                      #{{item}}{
+											display:none
+										}
+										</style>
+										<li class="grid__item" id="{{ item }}" style="display:block !important;" id="{{ item.handle }}">
+											{% render 'card-product',
+												card_product: all_products[item],
+												media_aspect_ratio: section.settings.image_ratio,
+												show_secondary_image: section.settings.show_secondary_image,
+												show_vendor: section.settings.show_vendor,
+												show_rating: section.settings.show_rating,
+												lazy_load: lazy_load,
+												show_quick_add: section.settings.enable_quick_add,
+												section_id: section.id
+											%}
+										</li>
+									{% endif %}
+								{% endfor %}
+							{% endif %}
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li class="grid__item">
+                <li class="grid__item" data-isSetup="false" id="{{ product.handle }}">
                   {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
@@ -121,7 +145,7 @@
                 </li>
               {%- endfor -%}
             </ul>
-    
+
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
             {%- endif -%}
@@ -131,7 +155,20 @@
     </div>
   </div>
 </div>
-
+<script>
+  var searchObj = Object.fromEntries(new URLSearchParams(location.search))
+  if (searchObj.sort_by) {
+    let els = Array.from(document.querySelectorAll('[data-issetup="false"]'))
+    let arr = searchObj.sort_by.split(',')
+    for (let i = 0; i <= arr.length; i++) {
+      els.map(j => {
+        if (j.id === arr[i]) {
+          j.remove()
+        }
+      })
+    }
+  }
+</script>
 
 {% schema %}
 {

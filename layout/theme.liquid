@@ -219,8 +219,8 @@
 		</script>
 		{% if template contains 'product' or template contains 'collection' or template contains 'index' or template contains 'search' %}
 			<script>
-        gtag('event', 'page_view', {
-          'send_to': 'AW-10929682459',
+         gtag('event', 'conversion', {
+      'send_to': 'AW-10929682459/CRGeCIXaq8QDEJvw1tso',
           'ecomm_pagetype': '{% if template contains 'collection' %}category{% elsif template contains 'product' %}product{% elsif template contains 'search' %}searchresults{% elsif template contains 'index' %}home{% endif %}',
 					{% if template contains 'product' %}
           'ecomm_prodid': 'shopify_US_{{ product.id }}_{{ product.variants.first.id }}',
