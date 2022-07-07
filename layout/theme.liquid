@@ -282,5 +282,9 @@
     {%- endif -%}
   
 {% include 'gtranslate', float: 'yes' %}
+
+<!-- **BEGIN** Hextom USB Integration // Main Include - DO NOT MODIFY -->
+    {% render 'hextom_usb_main', product: product, customer: customer %}
+    <!-- **END** Hextom USB Integration // Main Include - DO NOT MODIFY -->
 </body>
 </html>
