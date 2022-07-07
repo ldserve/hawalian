@@ -40,7 +40,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/7.6banner.jpg",
         "image_overlay_opacity": 0,
-        "image_link_1": "shopify:\/\/collections\/best-sellers",
+        "image_link_1": "https:\/\/hawalian.com\/collections\/all-of-the",
         "image_height": "large",
         "adapt_height_first_image": true,
         "desktop_content_position": "middle-center",
