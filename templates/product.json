@@ -52,13 +52,14 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "",
+            "content": "<p>Estimated delivery time to US\/EU is 7-14 business days<\/p><p>You have a max of 30 days to make returns.<br\/>You must send back your items to an informed address by customer service.<br\/>No returns made after 30 days from the purchase date will be accepted.<\/p>",
             "info_mode": false,
             "page": ""
           }
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
@@ -72,7 +73,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "",
+            "content": "<p>Machine wash\/Hand wash<\/p>",
             "info_mode": false,
             "page": ""
           }
